@@ -52,7 +52,8 @@ error_reporting(-1);
  * is that the tests folder is in the same directory path as system.  If
  * it is not, update the paths appropriately.
  */
-$system_path = dirname(__FILE__) . '/../../../../system';
+$system_path = @$_SERVER['CI_SYSTEM_DIR'] ?: 'system';
+$system_path = dirname(__FILE__) . '/../../../../'. $system_path;
 
 /*
  *---------------------------------------------------------------

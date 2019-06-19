@@ -73,13 +73,13 @@ class Fixture
             $this->CI->load->database();
         }
 
-        //security measure 2: only load if used database ends on '_test'
-        $len = strlen($this->CI->db->database);
-
-        if (substr($this->CI->db->database, $len - 5, $len) != '_test') {
-            die("\nSorry, the name of your test database must end on '_test'.\n" .
-                "This prevents deleting important data by accident.\n");
-        }
+        // //security measure 2: only load if used database ends on '_test'
+        // $len = strlen($this->CI->db->database);
+        //
+        // if (substr($this->CI->db->database, $len - 5, $len) != '_test') {
+        //     die("\nSorry, the name of your test database must end on '_test'.\n" .
+        //         "This prevents deleting important data by accident.\n");
+        // }
     }
 
 }
