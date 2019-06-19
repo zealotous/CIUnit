@@ -4,8 +4,8 @@
     "minimum-stability": "dev",
     "license": "MIT",
     "require": {
-        "phpunit/phpunit": "4.8.*",
-        "mustangostang/spyc": "0.5.*"
+        "phpunit/phpunit": "^5",
+        "mustangostang/spyc": "^0.5"
     },
     "autoload": {
         "classmap": [ "src/" ]
